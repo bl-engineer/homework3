@@ -25,6 +25,9 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
+# Files organization
+I have taken out index.html from `Develop folder`to the `root` so that with `Github pages`when i deploy the site, it won't start with the README but the html
+
 ---
 © Done by: Bocar Ly
 Assigment: Week 3 Homework 
