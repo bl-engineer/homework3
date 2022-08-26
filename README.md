@@ -1,8 +1,3 @@
-# homework3
-<!-- Password Generator -->
-This week's Challenge requires you to create an application that an employee can use to generate a random password based on criteria they've selected. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes. This week's coursework will teach you all the skills you need to succeed in this assignment.
-The password can include special characters.
-
 # user Story
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
@@ -25,8 +20,9 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-# Files organization
-I have taken out index.html from `Develop folder`to the `root` so that with `Github pages`when i deploy the site, it won't start with the README but the html
+# Description
+This is application that an employee can use to generate a random password based on criteria they've selected. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes
+
 
 ---
 © Done by: Bocar Ly
