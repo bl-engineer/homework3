@@ -30,38 +30,38 @@ function generatePassword() {
   while (characterClass == "") {
     // Initialize a counter to track the clicks on `Ok`
     var countOkClick = 0;
-    if (confirm("Click OK if you want to include uppercase characters in your password."))
+    if (confirm("Click OK if you want to include uppercase characters in your password"))
     {
       // To include uppercase characters
       characterClass += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       countOkClick += 1;
     }
     // To include lowercase characters
-    if (confirm("Click OK if you want to include lowercase characters in your password.."))
+    if (confirm("Click OK if you want to include lowercase characters in your password"))
     {
       characterClass += "abcdefghijklmnopqrstuvwxyz";
       countOkClick += 1;
     }
     // To include numbers
-    if (confirm("Click OK if you want to include numbers in your password.."))
+    if (confirm("Click OK if you want to include numbers in your password"))
     {
       characterClass += "0123456789";
       countOkClick += 1;
     }
     // To include special characters
-    if (confirm("Click OK if you want to include special characters in your password.."))
+    if (confirm("Click OK if you want to include special characters in your password"))
     {
       characterClass += "!@#$%^&*()_+=-`~<>,./?;:|\'";
       countOkClick += 1;
     }
     // To alert and reject if there no any group class included. At least one should be
     if (characterClass == "") {
-      alert("You must include at least one character class for the safety of your password.")
+      alert("You must include at least one character class for the safety of your password")
     }
     // Tracking the `Ok` click to alert user and give an option to include more character class for safer passport
     while (countOkClick == 1){
       alert("Warning! Your password is too weak. It contains only one type of characters")
-      if (confirm("Click `OK` if you want to include more special characters or click CANCEL to generate it anyway"))
+      if (confirm("Click OK if you want to include more special characters or click CANCEL to generate it anyway"))
         characterClass = ""
         // Out of the `if`
         countOkClick += 1;
