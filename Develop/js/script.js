@@ -19,18 +19,14 @@ function generatePassword() {
   // Prompt password length 
   var passwordLength = prompt("Input password length (8-128).");
   
-  // Check if password length is a type of `number` and not null
-  while (passwordLength.length <= 0 || isNaN(passwordLength)){
-    passwordLength = prompt("Invalide input! The password length must be numbers")
+  // Check if password length is a type of `number` and between (8-128)
+  while (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128){
+    passwordLength = prompt("Invalide input! The password length must be numbers and between 8 to 128")
   }
-  // Check if the password lenght is between 8 to 128 
-  while (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("Invalide input! The password length must be 8 to 128.");
-  }
-
+  
   // Select character classes
   var characterClass = "";
-
+  
   while (characterClass == "") {
     // Initialize a counter to track the clicks on `Ok`
     var countOkClick = 0;
