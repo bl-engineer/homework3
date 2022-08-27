@@ -26,7 +26,7 @@ function generatePassword() {
   
   // Select character classes
   var characterClass = "";
-  
+
   while (characterClass == "") {
     // Initialize a counter to track the clicks on `Ok`
     var countOkClick = 0;
@@ -61,7 +61,7 @@ function generatePassword() {
     // Tracking the `Ok` click to alert user and give an option to include more character class for safer passport
     while (countOkClick == 1){
       alert("Warning! Your password is too weak. It contains only one type of characters")
-      if (confirm("Click `OK` if you want to include more special characters or click CANCEL to `continue`"))
+      if (confirm("Click `OK` if you want to include more special characters or click CANCEL to generate it anyway"))
         characterClass = ""
         // Out of the `if`
         countOkClick += 1;
